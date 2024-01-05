@@ -1,0 +1,23 @@
+<router-outlet></router-outlet>
+
+<a routerLink="/product/home">Go to product Home</a> <br>
+<a routerLink="/dashboard">Go to Dashboard</a> <br>
+
+<br>
+
+<button (click)="showDiv1 = true">Show div 1</button>
+<button (click)="showDiv2 = true">Show div 2</button>
+
+
+
+<div *ngIf="showDiv1">
+    this is a div1
+</div>
+
+<div *ngIf="showDiv2">
+    this is a div2
+</div>
+
+<div *ngFor="let x of [ 'green', 'red', 'blue' ]">
+    <div [style.background-color]="x">This is a simple div {{x}}</div>
+</div>
