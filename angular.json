@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PracticeModuleWithRouting": {
+    "PracticeAssetsHttp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/practice-module-with-routing",
+            "outputPath": "dist/practice-assets-http",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "PracticeModuleWithRouting:build:production"
+              "browserTarget": "PracticeAssetsHttp:build:production"
             },
             "development": {
-              "browserTarget": "PracticeModuleWithRouting:build:development"
+              "browserTarget": "PracticeAssetsHttp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PracticeModuleWithRouting:build"
+            "browserTarget": "PracticeAssetsHttp:build"
           }
         },
         "test": {
